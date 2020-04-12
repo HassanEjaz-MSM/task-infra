@@ -1,0 +1,10 @@
+[jumpbox] 
+100.26.248.110
+
+[server]
+10.68.2.154
+10.68.2.189
+
+
+[server:vars]
+ansible_ssh_common_args= '-o ProxyCommand="ssh -i test.pem -W %h:%p -q ubuntu@100.26.248.110"'

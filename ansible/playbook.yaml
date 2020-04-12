@@ -1,0 +1,9 @@
+---
+- hosts: server
+  become: yes
+  remote_user: ubuntu
+  tasks:
+     - name: Transfer the script
+       copy: src=configure.sh dest=/tmp/ mode=0777
+     - name: Execute the script
+       command: sh /tmp/configure.sh {{ db }}
