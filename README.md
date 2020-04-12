@@ -63,7 +63,7 @@ curl -X GET http://localhost:8080/hello/hassan
 ```
 
 ## Folder Structure
-
+```
  |-README.md
  |-env
  | |-outputs.tf
@@ -110,7 +110,7 @@ curl -X GET http://localhost:8080/hello/hassan
  | | |-variables.tf
  |-start.sh
  |-architecture.png
-
+```
 ## Caveats/Notes
 
 - I tested the infrastructure using AWS region us-east-1 hence the ami version are from that region. If its deployed in different region then it would need replacing to suitable ubuntu image of the region. P.S: All the regions ami could be mapped using terraform like below
